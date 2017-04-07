@@ -26,6 +26,10 @@
     font-size: 80px;
   }
 
+  video {
+    object-fit: cover;
+  }
+
   .drop-cap {
     /*font-family: 'Diplomata SC', cursive;*/
     font-family: 'Abril Fatface', cursive;
@@ -224,13 +228,47 @@
       <img class="logo" src="" alt="">
     </div>
 
+
+    <div class="relative">
+      <div class="absolute half-up flex-container w-100 m0a">
+        <div class="flex-col">
+          <p class="v-top tc ff-white"> A film by Tayarisha Poe</p>
+          <img class="circle" src="./tayarisha.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="vh-100 w-100">
+        <div class="w-100 dib fl image fill">
+          <video class="vh-100 w-100" autoplay loop>
+            <source src="selah2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="absolute top-0 right-0 w-50 h-100 pa5 white">
+            <div class="inner-border">
+              <h1 class="tc pt4 mb0"> Selah </h1>
+              <p class="pa5"> <span class="drop-cap">S</span>he believes first and foremost in herself.
+              Selah is 17 years old, captain of the Spirit Squad, most likely candidate for class valedictorian,
+              and at the heart of it:
+              ruthlessly selfish and as cruel as circumstances call for with little regard for consequences.
+              <br>
+              <br>
+              She’s never made a habit out of feeling guilty.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
     <div class="w-100 row">
       <div class="w-50 dib fl image relative fill">
         <img class = "w-100 image" src="./selah_ice_cream.jpg" />
         <div class="absolute top-0 left-0 w-100 h-100 pa5">
+          <!--
           <div class="inner-border purple h-100">
             <h1 class="tc pt4 purple"> About </h1>
           </div>
+          -->
         </div>
       </div>
 
@@ -244,7 +282,6 @@
         </div>
       </div>
     </div>
-
     <div class="grid pr7 pl7 pt6 pb6">
       <div class="pa1">
       <span class="drop-cap">A</span>s is strongly evident in SELAH AND THE SPADES, young women, and the roles placed upon them, are at the forefront of this story. I have no patience for a lack of diversity. I am not interested in continuing the system of “othering” the “other.” Teenage girls, especially girls of color, are so rarely given the opportunity to tell the everyday mumblecore stories that we experience, because we must busy ourselves with telling the world of our various struggles. I am not interested in that; we are so much more than we have been allowed to show, we are unapologetically multitudinous in our being.
