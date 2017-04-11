@@ -59,7 +59,7 @@
     background: url('./selah_and_maxie.jpg');
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 100vh;
   }
 
   .logo {
@@ -207,6 +207,9 @@
   .half-up {
     top: -140px;
   }
+  .half-down {
+    top: -85px;
+  }
 
   .flex-container {
     display: flex;
@@ -222,28 +225,59 @@
 
   }
 
+  .parallax-container {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .parallax {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax-foreground {
+    transform: translateZ(0);
+  }
+  .parallax-back {
+    transform: translateZ(-1px) scale(2);
+  }
+
+  .tay-pic {
+    top: 120vh;
+  }
+
   </style>
   <body>
-    <div class="container">
-      <img class="logo" src="" alt="">
-    </div>
-
-
-    <div class="relative">
-      <div class="absolute half-up flex-container w-100 m0a">
-        <div class="flex-col">
-          <p class="v-top tc ff-white"> A film by Tayarisha Poe</p>
-          <img class="circle" src="./tayarisha.jpg" alt="">
+    <div class="parallax-container">
+        <div class="container parallax parallax-back">
+          <img class="logo" src="" alt="">
         </div>
-      </div>
+
+
+        <div class="relative parallax parallax-foreground tay-pic">
+          <div class="absolute half-down flex-container w-100 m0a">
+            <div class="flex-col">
+              <img class="circle" src="./tayarisha.jpg" alt="">
+              <p class="v-top tc"> A film by Tayarisha Poe</p>
+            </div>
+          </div>
+          <div class="pr7 pl7 pt6 pb6 col-tan">
+            <div class="pa1 pt6">
+              <span class="drop-cap">S</span>ome random copy
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div>
+          </div>
 
       <div class="vh-100 w-100">
-        <div class="w-100 dib fl image fill">
+        <div class="w-100 dib fl image fill relative">
           <video class="vh-100 w-100" autoplay loop>
-            <source src="selah2.mp4" type="video/mp4" />
+            <source src="selah_teacup.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div class="absolute top-0 right-0 w-50 h-100 pa5 white">
+          <div class="absolute top-0 left-0 w-50 h-100 pa5 white">
             <div class="inner-border">
               <h1 class="tc pt4 mb0"> Selah </h1>
               <p class="pa5"> <span class="drop-cap">S</span>he believes first and foremost in herself.
@@ -257,82 +291,81 @@
             </div>
           </div>
       </div>
-    </div>
 
 
-    <div class="w-100 row">
-      <div class="w-50 dib fl image relative fill">
-        <img class = "w-100 image" src="./selah_ice_cream.jpg" />
-        <div class="absolute top-0 left-0 w-100 h-100 pa5">
-          <!--
-          <div class="inner-border purple h-100">
-            <h1 class="tc pt4 purple"> About </h1>
+      <div class="w-100 row">
+        <div class="w-50 dib fl image relative fill">
+          <img class = "w-100 image" src="./selah_ice_cream.jpg" />
+          <div class="absolute top-0 left-0 w-100 h-100 pa5">
+            <!--
+            <div class="inner-border purple h-100">
+              <h1 class="tc pt4 purple"> About </h1>
+            </div>
+            -->
           </div>
-          -->
         </div>
-      </div>
 
-      <div class="content w-50 pa5 dib color-bkg col">
-        <div class="pa4 col-tan h-100">
-          <span class="drop-cap">S</span>elah Madewell believes first and foremost in herself. She’s 17 years old, captain of the Spirit Squad, most likely candidate for class valedictorian, and at the heart of it: ruthlessly selfish and as cruel as circumstances call for with no regard for consequences.
-          <br><br>
-          She’s never made a habit out of feeling guilty.
-          <br><br>
-          This is the story of how she loses that control.
-        </div>
-      </div>
-    </div>
-    <div class="grid pr7 pl7 pt6 pb6">
-      <div class="pa1">
-      <span class="drop-cap">A</span>s is strongly evident in SELAH AND THE SPADES, young women, and the roles placed upon them, are at the forefront of this story. I have no patience for a lack of diversity. I am not interested in continuing the system of “othering” the “other.” Teenage girls, especially girls of color, are so rarely given the opportunity to tell the everyday mumblecore stories that we experience, because we must busy ourselves with telling the world of our various struggles. I am not interested in that; we are so much more than we have been allowed to show, we are unapologetically multitudinous in our being.
-      We all know that representation matters, this cannot be denied. In a society where media creates so much of how we feel about others, and ourselves, it matters absolutely. How o en does a black girl get the chance, in  ction, to be so unashamedly wicked, without having to defend her race, her hair, her clothes, or any other super cial thing about herself? How o en is a woman of color given a chance to be the anti-hero? To de ne herself?
-      </div>
-      <div class="pa1">
-      Our definitions of good and evil are challenged these days in popular media, where the lines of justice are drawn in spirals and dropped at random amongst characters with questionable morals. Yet, even in this intriguing landscape, people of color are still tied down to the same stories and the too tired tropes. It’s boring.
-      </div>
-      <div class="pa1">
-      This project seeks to contribute to the world of black girls one of our own who isn’t made to feel ashamed of who she is, who has bad days, who does not smile, who unapologetically manipulates the world to her advantage.  is  lm seeks to show young girls of color that they can choose how to de ne themselves, and they can shape their world—it does not seek to tell them for what side.
-      </div>
-    </div>
-
-
-    <div class="w-100 row">
-      <div class="content w-60 pa5 dib color-bkg-blue col">
-        <div class="db">
-          <p class="dib pr3"> Name </p> <p class ="w-70 dib bb fb v-btm"></p>
-        </div>
-        <div class="db">
-          <p class="dib pr3"> Email </p> <p class ="w-70 dib bb fb v-btm"></p>
-        </div>
-        <p> Message </p>
-        <div class="pa4 col-tan">
-        </div>
-      </div>
-      <div class="w-40 dib fl image relative fill">
-        <img class = "w-100 image" src="./squad.jpg" />
-        <div class="absolute top-0 left-0 w-100 h-100 pa5">
-          <div class="inner-border ff-white h-100">
-            <h1 class="tc pt4"> Contact </h1>
+        <div class="content w-50 pa5 dib color-bkg col">
+          <div class="pa4 col-tan h-100">
+            <span class="drop-cap">S</span>elah Madewell believes first and foremost in herself. She’s 17 years old, captain of the Spirit Squad, most likely candidate for class valedictorian, and at the heart of it: ruthlessly selfish and as cruel as circumstances call for with no regard for consequences.
+            <br><br>
+            She’s never made a habit out of feeling guilty.
+            <br><br>
+            This is the story of how she loses that control.
           </div>
         </div>
       </div>
-
-    </div>
-    <div class="">
-      <img src="./selah2.jpg" alt="">
-    </div>
-    <div class="relative">
-      <div class="absolute half-up flex-container w-100 m0a">
-        <div class="flex-col">
-          <p class="v-top tc ff-white"> A film by Tayarisha Poe</p>
-          <img class="circle" src="./tayarisha.jpg" alt="">
+      <div class="grid pr7 pl7 pt6 pb6">
+        <div class="pa1">
+        <span class="drop-cap">A</span>s is strongly evident in SELAH AND THE SPADES, young women, and the roles placed upon them, are at the forefront of this story. I have no patience for a lack of diversity. I am not interested in continuing the system of “othering” the “other.” Teenage girls, especially girls of color, are so rarely given the opportunity to tell the everyday mumblecore stories that we experience, because we must busy ourselves with telling the world of our various struggles. I am not interested in that; we are so much more than we have been allowed to show, we are unapologetically multitudinous in our being.
+        We all know that representation matters, this cannot be denied. In a society where media creates so much of how we feel about others, and ourselves, it matters absolutely. How o en does a black girl get the chance, in  ction, to be so unashamedly wicked, without having to defend her race, her hair, her clothes, or any other super cial thing about herself? How o en is a woman of color given a chance to be the anti-hero? To de ne herself?
+        </div>
+        <div class="pa1">
+        Our definitions of good and evil are challenged these days in popular media, where the lines of justice are drawn in spirals and dropped at random amongst characters with questionable morals. Yet, even in this intriguing landscape, people of color are still tied down to the same stories and the too tired tropes. It’s boring.
+        </div>
+        <div class="pa1">
+        This project seeks to contribute to the world of black girls one of our own who isn’t made to feel ashamed of who she is, who has bad days, who does not smile, who unapologetically manipulates the world to her advantage.  is  lm seeks to show young girls of color that they can choose how to de ne themselves, and they can shape their world—it does not seek to tell them for what side.
         </div>
       </div>
-      <div class="w-100 thin-mid fill">
-        <img class="w-100" src="./selah_and_maxxie2_med.jpg" alt="">
+
+
+      <div class="w-100 row">
+        <div class="content w-60 pa5 dib color-bkg-blue col">
+          <div class="db">
+            <p class="dib pr3"> Name </p> <p class ="w-70 dib bb fb v-btm"></p>
+          </div>
+          <div class="db">
+            <p class="dib pr3"> Email </p> <p class ="w-70 dib bb fb v-btm"></p>
+          </div>
+          <p> Message </p>
+          <div class="pa4 col-tan">
+          </div>
+        </div>
+        <div class="w-40 dib fl image relative fill">
+          <img class = "w-100 image" src="./squad.jpg" />
+          <div class="absolute top-0 left-0 w-100 h-100 pa5">
+            <div class="inner-border ff-white h-100">
+              <h1 class="tc pt4"> Contact </h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="">
+        <img src="./selah2.jpg" alt="">
+      </div>
+      <div class="relative">
+        <div class="absolute half-up flex-container w-100 m0a">
+          <div class="flex-col">
+            <p class="v-top tc ff-white"> A film by Tayarisha Poe</p>
+            <img class="circle" src="./tayarisha.jpg" alt="">
+          </div>
+        </div>
+        <div class="w-100 thin-mid fill">
+          <img class="w-100" src="./selah_and_maxxie2_med.jpg" alt="">
+        </div>
       </div>
     </div>
-
-
+    </div>
   </body>
 </html>
