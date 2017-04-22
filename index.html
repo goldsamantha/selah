@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/tachyons.min.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <link href="https://fonts.googleapis.com/css?family=Diplomata+SC|Roboto+Slab|Abril+Fatface" rel="stylesheet">
   <title></title>
   </head>
@@ -270,6 +271,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </div>
           </div>
+        </div>
 
       <div class="vh-100 w-100">
         <div class="w-100 dib fl image fill relative">
@@ -368,3 +370,19 @@
     </div>
   </body>
 </html>
+
+
+<script type="text/javascript">
+
+  var groups = $('.parallax__group').toArray();
+  var total_height = groups.reduce(function(total_height, element){
+    element.style.top = total_height + "px";
+    var back = $(element).find('.parallax__layer--back')[0];
+    var front = $(element).find('.parallax__layer--base')[0];
+    front.style.top = back.clientHeight + "px";
+    //useful for debugging: console.log(back.clientHeight, element.clientHeight);
+    var h = back.clientHeight > front.clientHeight ? back.clientHeight : front.clientHeight;
+    return h + total_height;
+  }, 0);
+
+</script>
