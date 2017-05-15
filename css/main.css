@@ -233,6 +233,22 @@ video {
   padding-top: 85px;
 }
 
+.h-100px {
+  height: 100px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.w-200px {
+  width: 200px;
+}
+
+.w-300px {
+  width: 300px;
+}
+
 .clear {
   clear: both;
 }

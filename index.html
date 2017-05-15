@@ -123,10 +123,59 @@
             <img class = "w-100 vh-100 image" src="./assets/eye-paloma.jpg" />
           </div>
         </div>
-        <div class="parallax__layer parallax__layer--base  w-100 vh-100 bg-blue">
+        <div class="parallax__layer parallax__layer--base  w-100 vh-200 bg-blue">
+          <div class="pr7 pl7 pt6 pb6 vh-100 bg-white">
+            <div class="pa1 pt3">
+
+              <div class="pb3">
+                <h2 class="bb pb2">About Us</h1>
+              </div>
+
+              <div>
+                <!-- TODO -->
+                <div class="pa1 dib v-top">
+                  <video class="h-100px w-100px circle play" loop>
+                    <source src="./assets/me_bio3.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="dib w-300px v-top pl3 mr5 bio" style="display: none">
+                    <p class="bb pb1 mr4"> Ada Lovelace </p>
+                    <p>This is my little bio, short and stout. Here is my handle, here is my spout. When I get all steamed up hear me shout: Men's rights is not real.</p>
+                  </div>
+                  <p class="bt-name db"> Ada Lovelace </p>
+                </div>
+
+                <div class="pa1 dib v-top">
+                  <video class="h-100px w-100px circle play" loop>
+                    <source src="./assets/me_bio4.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="dib w-300px v-top pl3 mr5 bio" style="display: none">
+                    <p class="bb pb1 mr4"> Ada Lovelace </p>
+                    <p>This is my little bio, short and stout. Here is my handle, here is my spout. When I get all steamed up hear me shout: Men's rights is not real.</p>
+                  </div>
+                  <p class="bt-name db"> Ada Lovelace </p>
+                </div>
+
+                <div class="pa1 dib v-top">
+                  <video class="h-100px w-100px circle play" loop>
+                    <source src="./assets/me_bio3.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="dib w-300px v-top pl3 mr5 bio" style="display: none">
+                    <p class="bb pb1 mr4"> Ada Lovelace </p>
+                    <p>This is my little bio, short and stout. Here is my handle, here is my spout. When I get all steamed up hear me shout: Men's rights is not real.</p>
+                  </div>
+                  <p class="bt-name db"> Ada Lovelace </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <div class="w-100 vh-100 overflow-hidden">
             <img class = "w-100 vh-100 image" src="./assets/selah2.jpg" />
           </div>
+
         </div>
       </div>
     </div>
@@ -262,5 +311,20 @@
     var h = back.clientHeight > front.clientHeight ? back.clientHeight : front.clientHeight;
     return h + total_height;
   }, 0);
+
+
+  $('.play').hover(function(){
+      // handle in
+      this.play();
+      var bio = $(this).parent().find('.bio');
+      $(this).parent().find('.bt-name').hide();
+      bio.toggle("slide");
+    }, function(){
+      // handle out
+      this.pause();
+      this.currentTime = 0;
+      $(this).parent().find('.bio').toggle("slide");
+      $(this).parent().find('.bt-name').show();
+  });
 
 </script>
