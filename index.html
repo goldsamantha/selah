@@ -126,11 +126,6 @@
         <div class="parallax__layer parallax__layer--base  w-100 vh-200 bg-blue">
           <div class="pr7 pl7 pt6 pb6 vh-100 bg-white">
             <div class="pa1 pt3">
-
-              <div class="pb3">
-                <h2 class="bb pb2">About Us</h1>
-              </div>
-
               <div>
                 <!-- TODO -->
                 <div class="pa1 dib v-top">
@@ -320,18 +315,19 @@
   }, 0);
 
 
-  $('.play').hover(function(){
+  $('.play').parent().hover(function(){
       // handle in
-      this.play();
-      var bio = $(this).parent().find('.bio');
-      $(this).parent().find('.bt-name').hide();
+      $(this).find('video').get()[0].play();
+      var bio = $(this).find('.bio');
+      $(this).find('.bt-name').hide();
       bio.toggle("slide");
     }, function(){
       // handle out
-      this.pause();
-      this.currentTime = 0;
-      $(this).parent().find('.bio').toggle("slide");
-      $(this).parent().find('.bt-name').show();
+      var video = $(this).find('video').get()[0];
+      video.pause();
+      video.currentTime = 0;
+      $(this).find('.bio').toggle("slide");
+      $(this).find('.bt-name').show();
   });
 
 </script>
