@@ -241,6 +241,10 @@ a {
   height: 100px;
 }
 
+.h-300px {
+  height: 300px;
+}
+
 .w-100px {
   width: 100px;
 }
