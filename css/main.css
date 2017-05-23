@@ -5,12 +5,17 @@ body {
   background-color: #fdf8ef;
   color: #403e3e;
   font-size: 1.1em;
-  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Oswald', sans-serif;*/
+  /*font-family: 'Abril Fatface', cursive;*/
+  /*font-family: 'Special Elite', cursive;*/
+  font-family: Courier, "Courier New", monospace;
+
 }
 
 h1, h2 {
-  /*font-family: 'Diplomata SC', cursive;*/
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Diplomata SC', cursive;
+  transform: scale(0.5, 1);
+  font-weight: lighter;
 }
 
 h1 {
