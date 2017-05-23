@@ -3,7 +3,8 @@ body {
   margin: 0;
   background-color: #00FFE6;
   background-color: #fdf8ef;
-  color: #403e3e;
+  /*color: #403e3e;*/
+  color: #000;
   font-size: 1.1em;
   /*font-family: 'Oswald', sans-serif;*/
   /*font-family: 'Abril Fatface', cursive;*/
@@ -51,7 +52,8 @@ a {
 }
 
 .col-tan {
-  background-color: #fdf8ef;
+  /*background-color: #fdf8ef;*/
+  background-color: #fff;
 }
 
 .header-bg {
