@@ -46,6 +46,10 @@ a {
   color: #fff;
 }
 
+.ff-black {
+  color: #000;
+}
+
 .purple {
   color: #c588f7;
   border-color: #c588f7;
@@ -264,6 +268,32 @@ a {
   width: 300px;
 }
 
+.m0a {
+  margin: 0 auto;
+}
+
 .clear {
   clear: both;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 5px;
+  height: 200px;
+  margin-top: 10px;
+  flex-grow:1;
 }
