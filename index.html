@@ -165,12 +165,12 @@
         </div>
         <div class="parallax__layer parallax__layer--base  w-100 vh-200 bg-blue">
 
-          <div class="w-100 dib vh-100">
-            <div class="dib w-50 fl color-bkg vh-100">
+          <div class="w-100 dib vh-100 flex-container">
+            <div class="dib fl color-bkg vh-100 about-flex">
               <h1 class="tc pt7 white txl">About</h1>
             </div>
 
-            <div class="pl4 pt6 pb6 vh-100 bg-white w-50 fl">
+            <div class="pl4 pt6 pb6 vh-100 bg-white fl about-container about-flex about-flex-2">
               <div class="pa1 pt3">
                 <div>
                   <!-- TODO -->
@@ -295,5 +295,11 @@
       $(this).find('.bio').toggle("slide");
       $(this).find('.bt-name').show();
   });
+
+  // $('.about-flex-2').mouseenter(function() {
+  //   $(this).animate({"width": "55%"});
+  // }).mouseout(function() {
+  //
+  // });
 
 </script>
